@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автоматон в Heroes III: HotA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    })
+                    .catch(error => {
+                        console.error('ServiceWorker registration failed: ', error);
+                    });
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Heroes III: HotA</div>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="document.html">Документация</a></li>
+                <li><a href="about.html">О нас</a></li>
+            </ul>
+            <button class="download-btn">Скачать</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="search" style="position: relative;">
+                <input type="text" style="padding-left: 30px;" placeholder="Поиск...">
+                <img src="search.jpg">
+            </div>
+            <div class="popular">
+                <h3>Популярные</h3>
+                <p>Фабрика</p>
+                <p>Золотой Гусь</p>
+            </div>
+            <div class="categories">
+                <h3>Все категории</h3>
+                <select name="Существа" onmousedown="if(this.options.length>5){this.size=5;}" onchange='this.size=0;'
+                    onblur="this.size=0;">
+                    <option value="">Существа</option>
+                    <option value="">Автоматон</option>
+                    <option value="">Автоматон-Часовой</option>
+                    <option value="">Аспид</option>
+                    <option value="">Ассида</option>
+                    <option value="">Багровый Коатль</option>
+                    <option value="">Броненосец</option>
+                    <option value="">Броненосец-Вожак</option>
+                    <option value="">Головорез</option>
+                </select>
+                <select name="Фракции" onmousedown="if(this.options.length>5){this.size=5;}" onchange='this.size=0;'
+                    onblur="this.size=0;">
+                    <option value="">Фракции</option>
+                </select>
+                <select name="Герои" onmousedown="if(this.options.length>5){this.size=5;}" onchange='this.size=0;'
+                    onblur="this.size=0;">
+                    <option value="">Герои</option>
+                </select>
+                <select name="Карты" onmousedown="if(this.options.length>5){this.size=5;}" onchange='this.size=0;'
+                    onblur="this.size=0;">
+                    <option value="">Карты</option>
+                </select>
+                <select name="Артефакты" onmousedown="if(this.options.length>5){this.size=5;}" onchange='this.size=0;'
+                    onblur="this.size=0;">
+                    <option value="">Артефакты</option>
+                </select>
+            </div>
+        </aside>
+
+        <main>
+            <div style="background-color: #314235;;">
+                <section class="automoton1">
+                    <div class="automoton-content">
+                        <article>
+                            <h2 style="font-size: 48px;text-align:center">Автоматон</h2>
+                            <div style="display:flex;justify-content: center; padding:10px">
+                                <img src="Rectangle 21-1.png" style="height: 10px;">
+                                <img src="quote.png" style="height:30px; padding-left:30px;padding-right:30px;">
+                                <img src="Rectangle 21.png" style="height: 10px;">
+                            </div>
+                            <p>«Я создан для того, чтобы служить своему хозяину.
+                                Моя задача — выполнять приказы и защищать тех, кто нуждается в моей помощи»</p>
+                        </article>
+
+
+                        <article>
+                            <h3 style="padding-top:200px;">Об Автоматоне</h3>
+                            <p>
+                                Автоматон — это уникальное существо, созданное с помощью магии и технологий.
+                                Он представляет собой механического воина, который обладает невероятной силой и
+                                выносливостью.
+                                Автоматон может быть настроен на различные задачи,
+                                от боевых действий до выполнения сложных инженерных работ.
+                                Его тело покрыто прочными металлическими пластинами,
+                                а внутри него бьётся магический механизм, который поддерживает его жизнь.
+                            </p>
+                            <h3>Механика игры за Автоматона</h3>
+                            <p>
+                                В игре за Автоматона вы сможете использовать его уникальные способности, такие как:
+                                <br><br>
+                                Боевые навыки: Автоматон обладает высокой защитой и атакой, что делает его опасным
+                                противником на поле боя. Вы сможете настроить его боевые характеристики в зависимости от
+                                вашей стратегии.
+                                Инженерные способности: Автоматон также может выполнять инженерные работы, такие как
+                                строительство зданий и ремонт механизмов. Это позволит вам создавать более эффективные
+                                армии
+                                и укрепления.
+                                Магические способности: В зависимости от настроек, Автоматон может обладать различными
+                                магическими способностями, такими как исцеление или усиление союзников.
+                            </p>
+                        </article>
+                        <article>
+                            <div class="important">
+                                <h3>Важная особенность</h3>
+                                <p>Автоматон оснащён специальным ремонтным модулем, который позволяет ему автоматически
+                                    восстанавливать повреждения.
+                                    Эта способность активируется, когда Автоматон не участвует в бою и находится в
+                                    состоянии
+                                    покоя.
+                                    Ремонтный модуль восстанавливает часть здоровья Автоматона каждый ход, что делает
+                                    его
+                                    практически неуязвимым в долгосрочной перспективе.</p>
+                            </div>
+                            <p>Эта особенность позволяет Автоматону побеждать врагов за счёт своей выносливости и
+                                способности
+                                восстанавливаться после каждого сражения. Он может участвовать в битвах снова и снова,
+                                не требуя
+                                длительного времени на восстановление, как это бывает с другими существами.
+                            </p>
+                            <img src="town.png">
+                        </article>
+                    </div>
+
+                    <div class="automoton-table">
+                        <table>
+                            <tr>
+                                <td colspan="2"><img src="automaton.png" alt="Автоматон"></td>
+                            </tr>
+                            <tr>
+                                <th>Характеристики</th>
+                                <th>Значение</th>
+                            </tr>
+                            <tr>
+                                <td>Атака</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>Защита</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Здоровье</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>Урон</td>
+                                <td>7-8</td>
+                            </tr>
+                            <tr>
+                                <td>Скорость</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Выстрелов</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Перемещение</td>
+                                <td>По земле</td>
+                            </tr>
+                            <tr>
+                                <td>Размер</td>
+                                <td>2</td>
+                            </tr>
+                        </table>
+
+                        <div class="section-title">Фракция</div>
+                        <table>
+                            <tr>
+                                <th>Принос</th>
+                                <td>5 (Замок)</td>
+                            </tr>
+                            <tr>
+                                <th>Стоимость</th>
+                                <td>350 золота</td>
+                            </tr>
+                            <tr>
+                                <th>Здание</th>
+                                <td>Мануфактура</td>
+                            </tr>
+                            <tr>
+                                <th>Улучшение</th>
+                                <td>Автоматов-Часовой</td>
+                            </tr>
+                        </table>
+
+                        <div class="section-title">Особенности</div>
+                        <ul>
+                            <li>Занимает 2 гекса.</li>
+                            <li>Механическое существо.</li>
+                            <li>Не может быть восстановлено заклинанием Воскрешение.</li>
+                            <li>Не подвержен боевому духу.</li>
+                            <li>Иммунитет к магии огня.</li>
+                            <li>Иммунитет к магии разума.</li>
+                        </ul>
+
+                        <div class="section-title">Способности</div>
+                        <ul>
+                            <li>Взрыв при гибели.</li>
+                            <li>Способность можно активировать без траты хода отряда.</li>
+                            <li>На урон взрыва не влияют обычные модификаторы физического и магического урона.</li>
+                        </ul>
+                    </div>
+                </section>
+
+
+                <section class="automoton2">
+
+                    <article>
+                        <h3>Главные ошибки игры за Автоматона</h3>
+                        <p>
+                            Главные ошибки игры за Автоматона:
+
+                            Игнорирование инженерных способностей. Автоматон может строить здания и ремонтировать
+                            механизмы, что делает его полезным не только в бою, но и в развитии базы. Пренебрежение
+                            этими способностями ограничивает потенциал героя и снижает эффективность армии.
+                            <br><br>
+                            Недостаточное внимание к настройке навыков. Автоматон обладает широким спектром навыков,
+                            которые можно настроить под различные стили игры. Неправильный выбор навыков может привести
+                            к неэффективному использованию существа и снижению его полезности в армии.
+
+
+                        </p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Навык</th>
+                                    <th>Описание</th>
+                                    <th>Эффект</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>«Механический рывок»</td>
+                                    <td>Автоматон совершает мощный рывок вперёд, нанося урон всем противникам на своём
+                                        пути.</td>
+                                    <td>Увеличивает скорость передвижения автоматона и позволяет ему быстро перемещаться
+                                        по полю боя, а также наносить урон врагам при столкновении.</td>
+                                </tr>
+                                <tr>
+                                    <td>«Перезарядка»</td>
+                                    <td>Автоматон на короткое время увеличивает свою эффективность, перезаряжая свои
+                                        механизмы.
+                                    </td>
+                                    <td>Повышает атаку и защиту автоматона, позволяя ему наносить больше урона и
+                                        выдерживать больше атак.</td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>«Магическая защита»</td>
+                                    <td>Вокруг автоматона создаётся магический щит, который отражает часть урона от
+                                        вражеских атак.</td>
+                                    <td>Снижает получаемый автоматроном урон, увеличивая его выживаемость на поле боя.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>«Инженерный анализ»</td>
+                                    <td>Автоматон анализирует структуру здания или механизма, выявляя его слабые места.
+                                    </td>
+                                    <td>Позволяет автоматрону обнаруживать уязвимости в строениях и механизмах
+                                        противника, что может быть использовано для более эффективного разрушения или
+                                        улучшения собственных сооружений.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                    <article>
+                        <p>Ремонтный модуль является ключевой особенностью автоматона, позволяющей ему восстанавливаться
+                            после сражений.
+                            Однако неправильное использование этой способности, например, активация в неподходящее время
+                            или в неподходящем месте, может снизить эффективность автоматона.</p>
+                        <p style="font-size:60px;text-align:center">. . .</p>
+
+                        <div class="btns-pages">
+                            <div class="nam-page nam-active">1</div>
+                            <div class="nam-page">2</div>
+                            <div class="nam-page">3</div>
+                            <div class="nam-page">4</div>
+                            <div class="nam-page">5</div>
+                            <div class="nam-page">6</div>
+                            <div class="nam-page">7</div>
+                            <div class="nam-page">8</div>
+                            <div class="nam-page">9</div>
+                            <button class="btn-right" type="submit"><img src="Arrow4.png"></button>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="navigation">
+                <h3>Навигация</h3>
+                <ul>
+                    <li><a href="#section1">Автоматон</a></li>
+                    <li><a href="#section2">Об Автоматоне</a></li>
+                    <li><a href="#section3">Механика игры за Автоматона</a></li>
+                    <li><a href="#section1">Главные ошибки игры за Автоматона</a></li>
+                    <li><a href="#section2">Лор</a></li>
+                    <li><a href="#section3">Галерея</a></li>
+                    <li><a href="#section1">Арты</a></li>
+                    <li><a href="#section2">Абуз</a></li>
+                    <li><a href="#section3">Заметки</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="logo">2023 Heroes III: HotA</div>
+        <div class="contacts">
+            <p>Наши соцсети:</p>
+            <div class="contacts-logo">
+                <div class="twitter"><img src="twitter_white.png" alt="Twitter"></div>
+                <div class="discord"><img src="logo_white_discord.png" alt="Discord"></div>
+                <div class="instagram">
+                    <div class="vector">
+                        <img src="vector.png">
+                    </div>
+                    <div class="point">
+                        <img src="point.png">
+                    </div>
+                    <div class="vector-1">
+                        <img src="vector-1.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes III: Horn of the Abyss</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    })
+                    .catch(error => {
+                        console.error('ServiceWorker registration failed: ', error);
+                    });
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Heroes III: HotA</div>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="document.html">Документация</a></li>
+                <li><a href="about.html">О нас</a></li>
+            </ul>
+            <button class="download-btn">Скачать</button>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>О нас</h2>
+        <p>
+            HotA — это глобальное дополнение к игре <br>
+            Heroes of Might and Magic III (Герои Меча и Магии III),<br>
+            расширяющее классические игровые элементы и добавляющее <br>
+            новые. HotA добавляет в игру два новых города, ряд новых<br>
+            артефактов, нейтральных существ и объектов, а также новые <br>
+            кампании и карты. Кроме того, HotA исправляет большое число <br>
+            багов и многие недостатки баланса оригинальной игры, <br>
+            улучшает интерфейс игры и работу генератора случайных карт,<br>
+            добавляет новые возможности редактора карт.
+        </p>
+        <button class="play-btn">Играть</button>
+    </section>
+
+    <section id="download" class="download">
+        <h2>Команда разработчиков</h2>
+        <div class="p2">HotA Crew — независимая интернациональная (преимущественно русскоязычная) команда поклонников
+            игры Heroes of Might and Magic III, разработчик неофициального дополнения Horn of the Abyss к ней.</div>
+        <h2>Руководители</h2>
+        <div class="download-options">
+            <div class="members">
+                <img src="jinn.png" alt="Option 1">
+                <p>Docent Picolan</p>
+            </div>
+            <div class="members">
+                <img src="blonde.png" alt="Option 2">
+                <p>hippocamus</p>
+            </div>
+            <div class="members">
+                <img src="bull.png" alt="Option 3">
+                <h3></h3>
+                <p>Sav</p>
+            </div>
+        </div>
+        <h2>Геймдизайнеры</h2>
+        <div class="download-options">
+            <div class="members">
+                <img src="brown.png" alt="Option 1">
+                <p>Alex-ander</p>
+            </div>
+            <div class="members">
+                <img src="blackbull.png" alt="Option 2">
+                <p>Spartak</p>
+            </div>
+            <div class="members">
+                <img src="viking.png" alt="Option 3">
+                <h3></h3>
+                <p>Vade Parvis</p>
+            </div>
+        </div>
+
+
+
+        <div class="download-options">
+            <div>
+                <h2>Сценаристы</h2>
+                <div class="group2">
+                    <div class="members">
+                        <img src="bluebull.png" alt="Option 1">
+                        <p>Mugais</p>
+                    </div>
+                    <div class="members">
+                        <img src="hood.png" alt="Option 2">
+                        <p>Xel</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>Программисты</h2>
+                <div class="group2">
+                    <div class="members">
+                        <img src="orc.png" alt="Option 3">
+                        <h3></h3>
+                        <p>Baratorch</p>
+                    </div>
+                    <div class="members">
+                        <img src="demon.png" alt="Option 1">
+                        <p>Feanor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2>Художники</h2>
+        <div class="download-options">
+                
+                    <div class="members">
+                        <img src="queen.png" alt="Option 1">
+                        <p>Agar</p>
+                    </div>
+                    <div class="members">
+                        <img src="rob.png" alt="Option 2">
+                        <p>Don-Ko aka Лентяй</p>
+                    </div>
+                
+                    <div class="members">
+                        <img src="witch.png" alt="Option 3">
+                        <h3></h3>
+                        <p>Simon</p>
+                    </div>
+                    <div class="members">
+                        <img src="necro.png" alt="Option 1">
+                        <p>Vade Parvis</p>
+                    </div>
+                </div>
+                <a>и другие...</a>
+    </section>
+
+    <footer>
+        <div class="bugs">
+            <div class="logo">2023 Heroes III: HotA</div>
+            <div style="color: #969696;">Обнаружили баги?<br>Сообщите нам</div>
+            <p><a style="color:#969696" href="mailto:heroes3@gmail.com?subject=Проблемы с багами">heroes3@gmail.com</a>
+            </p>
+        </div>
+        <div class="contacts">
+            <p style="color:#969696">Наши соцсети:</p>
+            <div class="contacts-logo">
+                <div class="twitter">
+                    <img src="twitter_white.png">
+                </div>
+                <div class="discord">
+                    <img src="logo_white_discord.png">
+                </div>
+                <div class="instagram">
+                    <div class="vector">
+                        <img src="vector.png">
+                    </div>
+                    <div class="point">
+                        <img src="point.png">
+                    </div>
+                    <div class="vector-1">
+                        <img src="vector-1.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

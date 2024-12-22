@@ -1,0 +1,911 @@
+@font-face {
+    font-family: "IBMPlexSerif-Bold";
+    src: url(IBMPlexSerif-Bold.ttf) format("truetype");
+    font-family: "IBMPlexSerif-BoldItalic";
+    src: url(IBMPlexSerif-BoldItalic.ttf) format("truetype");
+    font-family: "IBMPlexSerif-ExtraLight";
+    src: url(IBMPlexSerif-ExtraLight.ttf) format("truetype");
+    font-family: "IBMPlexSerif-ExtraLightItalic";
+    src: url(IBMPlexSerif-ExtraLightItalic.ttf) format("truetype");
+    font-family: "IBMPlexSerif-Italic";
+    src: url(IBMPlexSerif-Italic.ttf) format("truetype");
+    font-family: "IBMPlexSerif-Light";
+    src: url(IBMPlexSerif-Light.ttf) format("truetype");
+    font-family: "IBMPlexSerif-LightItalic";
+    src: url(IBMPlexSerif-LightItalic.ttf) format("truetype");
+    font-family: "IBMPlexSerif-Medium";
+    src: url(IBMPlexSerif-Medium.ttf) format("truetype");
+    font-family: "IBMPlexSerif-MediumItalic";
+    src: url(IBMPlexSerif-MediumItalic.ttf) format("truetype");
+    font-family: "IBMPlexSerif-Regular";
+    src: url(IBMPlexSerif-Regular.ttf) format("truetype");
+    font-family: "IBMPlexSerif-SemiBold";
+    src: url(IBMPlexSerif-SemiBold.ttf) format("truetype");
+    font-family: "IBMPlexSerif-SemiBoldItalic";
+    src: url(IBMPlexSerif-SemiBoldItalic.ttf) format("truetype");
+    font-family: "IBMPlexSerif-Thin";
+    src: url(IBMPlexSerif-Thin.ttf) format("truetype");
+    font-family: "IBMPlexSerif-ThinItalic";
+    src: url(IBMPlexSerif-ThinItalic.ttf) format("truetype");
+}
+
+.name {
+    font-size: 70px;
+    font-weight: bold;
+    font-family: "IBMPlexSerif-Regular";
+    background: linear-gradient(#EBF46D, #D09F19, #FFFFFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+    color: transparent;
+}
+
+.content-hero {
+    width: 100%;
+    background: linear-gradient(#151c18, #1f2b24);
+    height: 100%;
+    min-height: 300px;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.links {
+    margin-left: auto;
+    font-size: 18px;
+}
+
+.main-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "IBMPlexSerif-Regular";
+    background: linear-gradient(#EBF46D, #D09F19, #FFFFFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .logo {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "IBMPlexSerif-Regular";
+    background: linear-gradient(#EBF46D, #D09F19, #FFFFFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.download .download-btn {
+    background-color: #FFD16C;
+    border-radius: 30px;
+    height: 60px;
+    width: 185px;
+    margin-top: 20px;
+}
+
+.sidebar {
+    width: auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+}
+
+.popular p {
+    background: #314235;
+    width: 100%;
+    height: 42px;
+    border: 1px solid #FFD16C;
+    border-radius: 10px;
+    padding: 8px;
+
+}
+
+.popular h3 {
+    color: rgb(255, 209, 108);
+    font-family: "IBMPlexSerif-Regular";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.categories li {
+    list-style-image: url(marker.png);
+    width: auto;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.categories h3 {
+    color: rgb(255, 209, 108);
+    font-family: "IBMPlexSerif-Regular";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.categories a {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "IBMPlexSerif-Regular";
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    color: #9D9075;
+}
+
+.search li {
+    list-style-image: url(marker.png);
+    width: auto;
+    padding: 15px;
+    font-size: 18px;
+
+}
+
+.navigation a {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "IBMPlexSerif-Regular";
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    color: #9D9075;
+}
+
+.search img {
+    position: absolute;
+    background: #314235;
+    top: 40%;
+    left: 8px;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+}
+
+.search input {
+    background: #314235;
+    width: 100%;
+    height: 42px;
+    padding-left: 15px;
+    border: 1px solid #FFD16C;
+    border-radius: 10px;
+}
+
+.search .box {
+    background: #314235;
+    width: 100%;
+    height: 42px;
+    padding-left: 15px;
+    border: 1px solid #FFD16C;
+}
+
+.sidebar h3,
+.navigation h3 {
+    margin: 0 0 10px;
+}
+
+.sidebar input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+.section-title {
+    background-color: #171C1F;
+}
+
+.container {
+    margin: auto;
+    background: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin-top: 80px;
+}
+
+.main {
+    border: 1px solid #FFD16C;
+    font-family: "IBMPlexSerif-Regular";
+    font-size: 18px;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+
+.automoton1 {
+    display: flex;
+    width: 100%;
+    min-height: 410px;
+    padding: 20px;
+    text-align: left;
+}
+
+.automoton1 p {
+    color: #9EA0A1;
+}
+
+.automoton2 {
+    width: 100%;
+    min-height: 410px;
+    padding: 20px;
+    text-align: left;
+}
+
+.automoton-table {
+    max-width: 16em;
+    min-height: 2em;
+    margin-right: 20px;
+    border: 1px solid #FFD16C;
+    background: #7B7559;
+    color: #F1DDC1;
+    font-size: 10px;
+}
+
+.automoton-table img {
+    width: 100%;
+    height: 100%;
+}
+
+.automoton-content {
+    flex: 1;
+    padding: 15px 30px;
+}
+
+.automoton-table td {
+    color: #F1DDC1;
+}
+
+.important {
+    text-align: center;
+    background: linear-gradient(rgb(12, 16, 12, 0.70), rgb(13, 18, 13));
+    border-radius: 5%;
+    padding: 20px;
+    ;
+}
+
+.important h3 {
+    color: #ffffff
+}
+
+.important p {
+    color: #9EA0A1
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+select {
+    width: 160px;
+    margin-top: 10px;
+    background: #314235;
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    color: #ffffff;
+    border: 1px solid #FFD16C;
+    flex: 1;
+    font-family: "IBMPlexSerif-Regular";
+    padding: 10px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #fff;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+.download p {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 36px;
+}
+
+.download a {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 34px;
+    background: #D09F19;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+header .download-btn {
+    width: 163px;
+    height: 60px;
+    left: 1627px;
+    top: 20px;
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 209, 108);
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0);
+    color: rgb(255, 209, 108);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero h2 {
+    position: absolute;
+    top: 260px;
+    left: 350px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "IBMPlexSerif-Regular";
+    background: linear-gradient(#EBF46D, #D09F19, #FFFFFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    text-align: left;
+    font-size: 20px;
+    margin: 20px 0;
+    padding-top: 220px;
+    padding-left: 65px;
+}
+
+.hero .play-btn {
+    width: 100px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 66px;
+
+}
+
+.p1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 8px;
+    text-align: left;
+    margin-top: 8px;
+}
+
+.card p {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    text-align: left;
+}
+
+.card h3 {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "IBMPlexSerif-Regular";
+    background: linear-gradient(#EBF46D, #D09F19, #FFFFFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: left;
+}
+
+
+.download h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "IBMPlexSerif-Regular";
+    background: linear-gradient(#EBF46D, #D09F19, #FFFFFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.download .group2 {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.p2 {
+
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: #fff;
+    background-color: #121212;
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-image: url('hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 210px;
+}
+
+.features {
+    background-image: url('dragon.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 410px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.download {
+    background: linear-gradient(#151c18, #1f2b24);
+    width: 100%;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.download-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.maps {
+    background-image: url('menu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stage1 {
+    display: flex;
+    gap: 10px;
+}
+
+.stage2,
+.stage3 {
+    display: flex;
+    gap: 10px;
+}
+
+.maps .map1 {
+    border-width: thick;
+    height: 300px;
+    width: 400px;
+}
+
+.maps .map2 {
+    border: 4px #FFD16C;
+    height: 150px;
+    width: 175px;
+}
+
+.maps .map3 {
+    border: 4px #FFD16C;
+    height: 150px;
+    width: 175px;
+}
+
+.maps .map4 {
+    border: 10px #FFD16C;
+    height: 150px;
+    width: 350px;
+}
+
+
+.card,
+.option {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.members {
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.card img,
+.option img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.members img {
+    border: 40px #FFD16C;
+    width: 90%;
+}
+
+footer .logo {
+    text-align: left;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "IBMPlexSerif-Regular";
+    background: linear-gradient(#EBF46D, #D09F19, #FFFFFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+footer {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .contacts {
+    text-align: center;
+}
+
+footer .contacts-logo {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4px;
+    gap: 15px;
+}
+
+footer .contacts-logo .twitter {
+    background-image: url(Ellipse\ 7.png);
+    width: 40px;
+    height: 40px;
+    padding: 11px;
+}
+
+footer .contacts-logo .discord {
+    background-image: url(Ellipse\ 7.png);
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+footer .contacts-logo .instagram {
+    background-image: url(Ellipse\ 7.png);
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+footer .contacts-logo .instagram .point {
+    position: relative;
+    left: 5px;
+    bottom: 30px;
+
+}
+
+footer .contacts-logo .instagram .vector {
+    position: relative;
+    top: 1px;
+}
+
+footer .contacts-logo .instagram .vector-1 {
+    position: relative;
+    bottom: 40px
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    color: #fff;
+}
+
+table th {
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+.section-title {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FFD16C;
+}
+
+.btns-pages {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.btns-pages>* {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nam-page {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    padding-left: 23px;
+    font-size: 30px;
+    background: #121711;
+}
+
+.btn-right {
+    height: 70px;
+    width: 140px;
+    border-radius: 50%;
+    background: #121711;
+}
+
+@media (max-width: 767px) {
+    .name {
+        font-size: 40px;
+
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .hero {
+        padding: 20px;
+        min-height: 150px;
+        text-align: center;
+    }
+
+    .content-hero {
+        min-height: 200px;
+    }
+
+    .main-banner {
+        padding: 10px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+        position: static;
+        padding: 0;
+    }
+
+    .hero p {
+        font-size: 16px;
+        padding-top: 100px;
+    }
+
+    .download h2 {
+        font-size: 28px;
+    }
+
+    .download .group2 {
+        flex-direction: column;
+    }
+
+    .automoton1,
+    .automoton2 {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .automoton-table {
+        max-width: 100%;
+    }
+
+    .sidebar {
+        padding: 15px;
+    }
+
+    .search input {
+        width: calc(100% - 30px);
+    }
+
+    table,
+    th,
+    td {
+        font-size: 14px;
+    }
+
+    .features {
+        padding: 30px 10px;
+        min-height: 300px;
+    }
+
+    .feature-cards {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .download {
+        padding: 30px 10px;
+    }
+
+    .download-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .maps {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .maps .map1,
+    .maps .map2,
+    .maps .map3,
+    .maps .map4 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .card,
+    .option,
+    .members {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 30px 10px;
+    }
+
+    footer .logo {
+        font-size: 24px;
+    }
+
+    footer .contacts-logo {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    footer .contacts-logo div {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer .contacts-logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    table,
+    th,
+    td {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 1em;
+    }
+
+    .btns-pages {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nam-page {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+
+    .btn-right {
+        width: 120px;
+        height: 50px;
+    }
+}

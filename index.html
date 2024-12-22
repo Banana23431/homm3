@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes III: Horn of the Abyss</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    })
+                    .catch(error => {
+                        console.error('ServiceWorker registration failed: ', error);
+                    });
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Heroes III: HotA</div>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="document.html">Документация</a></li>
+                <li><a href="about.html">О нас</a></li>
+            </ul>
+            <button class="download-btn">Скачать</button>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <p>
+            HotA — это глобальное дополнение к игре <br> 
+            Heroes of Might and Magic III (Герои Меча и Магии III),<br> 
+            расширяющее классические игровые элементы и добавляющее <br> 
+            новые. HotA добавляет в игру два новых города, ряд новых<br> 
+            артефактов, нейтральных существ и объектов, а также новые <br> 
+            кампании и карты. Кроме того, HotA исправляет большое число <br> 
+            багов и многие недостатки баланса оригинальной игры, <br> 
+            улучшает интерфейс игры и работу генератора случайных карт,<br>  
+            добавляет новые возможности редактора карт.
+        </p>
+        <button class="play-btn">Играть</button>
+    </section>
+
+    <section class="content-hero">
+        <div class="name">Heroes III: Horn of The Abyss</div>
+        <p>HOTA объединяет в себе не только крутые технические решения и много сил разработчиков, но и сплочённое сообщество игроков. Здесь вы найдёте множество новых функций, улучшений и возможностей, которые сделают вашу игру ещё более увлекательной и интересной</p>
+    </section>
+
+    <section id="features" class="features">
+        <p>Мод добавляет множество нового контента, включая новые кампании, замки, артефакты и карты.</p>
+        <div class="feature-cards">
+            <div class="card">
+                <img src="angel.jpg" alt="Feature 1">
+                <div class="p1">Новости</div>
+                <h3>Новые кампании</h3>
+                <p>Окунитесь в увлекательные истории и сражения.</p>
+            </div>
+            <div class="card">
+                <img src="sword.png" alt="Feature 2">
+                <div class="p1">Соревновательная сцена</div>
+                <h3>Регистрация на турниры</h3>
+                <p>Соревнуйтесь с игроками со всего мира.</p>
+            </div>
+            <div class="card">
+                <img src="grass.png" alt="Feature 3">
+                <div class="p1">Информация о новых версиях</div>
+                <h3>Улучшенный геймплей</h3>
+                <p>Новые механики и визуальные улучшения.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <h2>Heroes III: Horn of the Abyss</h2>
+        <div class="p2">-  это глобальное дополнение к игре Heroes of Might & Magic III (Герои Меча и Магии III), расширяющее классические игровые элементы и добавляющее новые.</div>
+        <div class="download-options">
+            <div class="option">
+                <img src="goldish4.png" alt="Новые фракции">
+                <h3>Новые фракции</h3>
+                <p>Откройте уникальные фракции и юниты.</p>
+            </div>
+            <div class="option">
+                <img src="goldish2.png" alt="Новые приключения">
+                <h3>Новые приключения</h3>
+                <p>Погрузитесь в неизведанные миры.</p>
+            </div>
+            <div class="option">
+                <img src="goldish3.png" alt="Новые возможности">
+                <h3>Новые возможности</h3>
+                <p>Используйте новые артефакты и магии.</p>
+            </div>
+        </div>
+        <button class="download-btn">Играть</button>
+    </section>
+
+    <section class="maps">
+        <div class='stage1'>
+            <img class="map1" src="map1.png" alt="Map 1">
+            <div class='stage2'>
+                <div class='stage3'>
+                    <img class="map2" src="map2.png" alt="Map 2">
+                    <img class="map3" src="map3.png" alt="Map 3">
+                </div>
+                <img class="map4" src="map4.png" alt="Map 4">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="bugs">
+            <div class="logo">2023 Heroes III: HotA</div>
+            <div style="color: #969696;">Обнаружили баги?<br>Сообщите нам</div>
+            <p><a style="color:#969696" href="mailto:heroes3@gmail.com?subject=Проблемы с багами">heroes3@gmail.com</a></p>
+        </div>
+        <div class="contacts">
+            <p style="color:#969696">Наши соцсети:</p>
+            <div class="contacts-logo">
+                <div class="twitter">
+                    <img src="twitter_white.png" alt="Twitter">
+                </div>
+                <div class="discord">
+                    <img src="logo_white_discord.png" alt="Discord">
+                </div>
+                <div class="instagram">
+                    <div class="vector">
+                        <img src="vector.png" alt="Instagram Vector">
+                    </div>
+                    <div class="point">
+                        <img src="point.png" alt="Instagram Point">
+                    </div>
+                    <div class="vector-1">
+                        <img src="vector-1.png" alt="Instagram Vector 1">
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </footer>
+</body>
+
+</html>
